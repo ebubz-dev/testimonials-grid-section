@@ -1,0 +1,158 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+}
+img {
+    width: 2rem;
+    height: auto;
+    border-radius: 50%;
+}
+main div {
+    border-radius: 0.5rem;
+}
+#daniel {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0;
+    padding: 1rem 1.6rem;
+    color: hsl(210, 46%, 95%);
+}
+#jonathan {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 2rem;
+    color: hsl(210, 46%, 95%);
+}
+#jeanette,  #kira {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem 2rem;
+}
+#patrick {
+    background-color: hsl(219, 29%, 14%);
+    padding: 1rem 2rem;
+    color: hsl(210, 46%, 95%);
+}
+#daniel article, #jonathan article, #jeanette article, #patrick article, #kira article {
+    opacity: 0.7;
+}
+#daniel b, #jonathan b, #jeanette b, #patrick b, #kira b {
+    opacity: 0.7;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+p {
+    opacity: 0.2;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+#daniel h1, #jonathan h1, #jeanette h1, #patrick h1, #kira h1 {
+    font-size: 1.39rem;
+    margin-top: 0;
+    opacity: 0.9;
+}
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+img, #daniel div, #jonathan div, #jeanette div, #patrick div, #kira div {
+    display: inline-block;
+}
+#daniel article, #jonathan article, #jeanette article, #patrick article, #kira article {
+    line-height: 1.2rem;
+    opacity: 0.7;
+}
+@media screen and (min-width: 760px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3;
+        grid-auto-columns: auto;
+        grid-auto-rows: minmax(auto, auto);
+        grid-gap: 1.5rem;
+        margin: 4rem;
+    }
+    #daniel h1, #jonathan h1, #jeanette h1, #patrick h1, #kira h1 {
+        font-size: 1.6rem;
+        margin-top: 0;
+        opacity: 0.9;
+    }
+    #daniel article, #jonathan article, #jeanette article, #patrick article, #kira article {
+        opacity: 0.7;
+        font-size: 0.9rem;
+    }
+    #daniel {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-position: 80% 0;
+    }
+    #daniel article {
+        max-width: 74ch;
+    }
+    #daniel h1 {
+        max-width: 47ch;
+    }
+    #jonathan {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #patrick h1 {
+        max-width: 48ch;
+    }
+    #jeanette {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #patrick {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    #kira {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    #jeanette h1 {
+        max-width: 16ch;
+    }
+}
+@media screen and (max-width: 759px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6;
+        grid-auto-rows: minmax(auto, auto);
+        grid-gap: 1.5rem;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        max-width: 22.6rem;
+    }
+    #daniel {
+        grid-row: 1/2;
+    }
+    #daniel h1 {
+        max-width: 25.7ch;
+    }
+    #jonathan {
+        grid-row: 2/3;
+    }
+    #jeanette {
+        grid-row: 3/4;
+    }
+    #patrick {
+        grid-row: 4/5;
+    }
+    #kira {
+        grid-row: 5/6;
+    }
+}
